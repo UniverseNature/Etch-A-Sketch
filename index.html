@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="https://www.flaticon.com/svg/static/icons/svg/522/522118.svg">
+        <title>Etch-A-Sketch</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <h1>Etch-A-Sketch</h1>
+            <h4>these ugly borders are just there for help while designing, it wont be long before they are gone</h4>
+        </header>
+        <main>
+            <table>
+                <tr>
+                    <td id="sketchSettings"> 
+                        <p id="titleSketchSettings">Settings</p>
+                        <p">Select the amount of pixels that you want to have in your Etch-A-Sketch.</p>
+                        <select name="pxAmount" id="pxAmount">
+                            <option value="16px">16px</option>
+                            <option value="50px">50px</option>
+                            <option value="100px">100px</option>
+                            <option value="500px">500px</option>
+                            <option value="1000px">1000px</option>
+                            <option value="custom">Custom</option>
+                        </select>
+                        <p id="colorChooserLabel">Choose the color to draw with.</p>  
+                        <input type="color" id="colorChooser">
+                        <p id="themeChangerLabel">Change the theme, dark or light.</p>
+                        <button id="themeChangerDark" type="button" onclick="themeChanger()">Dark Theme</button>
+                        <button id="themeChangerLight" type="button" onclick="themeChanger()">Light Theme</button>
+                    </td>
+                    <td id="container">
+                        insert big box
+                    </td>
+                </tr>
+            </table>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
