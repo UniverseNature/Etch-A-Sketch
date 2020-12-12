@@ -1,40 +1,61 @@
 <!DOCTYPE html>
 <html>
     <head>
+        
+        <!--Linking the favicon.-->
+
         <link rel="icon" href="https://www.flaticon.com/svg/static/icons/svg/522/522118.svg">
+
+        <!--Title, shown in the tab at the top of the browser window.-->
+        
         <title>Etch-A-Sketch</title>
+        
+        <!--Linking the CSS-->
+        
         <link rel="stylesheet" href="style.css" type="text/css">
     </head>
     <body id="body">
         <header>
             <h1>Etch-A-Sketch</h1>
-            <h4>these ugly borders are just there for help while designing, it wont be long before they are gone</h4>
         </header>
         <main>
+
+            <!--These are the elements for the settings, shown on the right of the screen.-->
+            
             <table>
                 <tr>
                     <td id="sketchSettings"> 
                         <p id="titleSketchSettings">Settings</p>
-                        <p id="pxAmountLabel">Select the amount of pixels that you want to have.</p>
+                        <p>Select the amount of pixels that you want to have.</p>
                         <select name="pxAmount" id="pxAmount">
                             <option value="16px">16px</option>
                             <option value="50px">50px</option>
                             <option value="100px">100px</option>
                             <option value="custom">Custom</option>
                         </select>
+                        <input id="inputCustomValue" type="text" placeholder="Enter a custom value...">
                         <p id="colorChooserLabel">Choose the color to draw with.</p>  
                         <input type="color" id="colorChooser">
                         <p id="themeChangerLabel">Change the theme, dark or light.</p>
                         <button id="themeChangerDark" type="button" onclick="themeChangerDark()">Dark Theme</button>
                         <button id="themeChangerLight" type="button" onclick="themeChangerLight()">Light Theme</button>
                     </td>
+                    
+                    <!--A cell to act like a margin between the settings and the main area, becuz margin wasn't working fsr.-->
+                    
                     <td id="gapMaintainer101"></td>
+                    
+                    <!--The main area.-->
+                    
                     <td id="container">
-                    </center>insert big box</center>
+                        insert B O X
                     </td>
                 </tr>
             </table>
         </main>
+        
+        <!--Linking the JavaScript-->
+        
         <script src="script.js"></script>
     </body>
 </html>
