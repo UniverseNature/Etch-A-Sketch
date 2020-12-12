@@ -1,32 +1,39 @@
-html{background-color:lightyellow;}
+bodys{background-color:lightyellow;}
 
 header h1{text-align: center;
     margin-bottom:5%}
 
 #sketchSettings{float:left;
-    width:90%;
-    border:2px solid red;}
+    width:100%;
+    border:1px solid red;}
 
 #titleSketchSettings{font-size:25px;
     text-align:center;
     font-weight:700;}
 
-#pxAmount{width:100%;
+#pxAmountLabel{text-align:center;}
+
+#pxAmount{width:50%;
     background-color:yellow;
     border:2px solid black;}
 
-#colorChooser{width:90%;
+#colorChooser{width:50%;
     height:35px;}
 
 #themeChangerDark{color:white;
     background-color:black;
     border-color:black;
-    display:inline;}
+    display:inline;
+    border-radius:100px;}
 
 #themeChangerLight{color:black;
     background-color:white;
-    border-color: lightgray;
-    display:inline;}
+    border:1px solid lightgray;
+    display:none;
+    padding:3px}
 
-#container{border:2px solid blue;
-    width:50%;}
+#gapMaintainer101{width:25%;
+    border:1px solid green;}
+
+#container{width:50%;
+    border:1px solid blue;}
