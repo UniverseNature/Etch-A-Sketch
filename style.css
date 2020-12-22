@@ -1,56 +1,87 @@
 /* Just some stuff to get us started. */
 
-body{background-color:lightyellow;}
+body {
+    background-color:lightyellow;
+}
 
-header h1{text-align: center;
-    margin-bottom:5%}
+header h1 {
+    text-align: center;
+    margin-bottom:5%
+}
 
-p{font-size:18px;}
+p {
+    font-size:18px;
+}
 
 /* Actual CSS */
 
 /* Sketch settings, start point. */
+.flex-container {
+    display:flex;
+    flex-direction:row;
+    gap:2rem;
+}
 
-#sketchSettings{float:left;
-    width:100%;
+#sketchSettings {
+    float:left;
     border:2px solid black;
-    padding:10px;}
+    padding:1em;
+}
 
-#titleSketchSettings{font-size:25px;
+#titleSketchSettings {
+    font-size:25px;
     text-align:center;
-    font-weight:700;}
+    font-weight:700;
+}
 
-#pxAmount{width:50%;
-    background-color: lightyellow;
-    border:2px solid black;}
+#pxAmount {
+    width:50%;
+    border:2px solid black;
+}
 
-#inputCustomValue{background-color:lightyellow;}
+#inputCustomValue {
+    display:none;
+}
 
-#inputCustomValue::placeholder{color:gray;}
-
-#colorChooser{width:50%;
-    height:35px;}
-
-#themeChangerDark{color:white;
-    background-color:black;
-    border-color:black;
+#submitCustomValue {
     display:inline;
-    border-radius:100px;}
+    padding:0.3em;
+}
 
-#themeChangerLight{color:black;
+#inputCustomValue::placeholder { 
+    color:gray;
+}
+
+#colorChooser {
+    width:50%;
+    height:35px;
+}
+
+#themeChangerDark {
+    color:white;
+    background-color:black;
+    border:1px solid black;
+    display:inline;
+    border-radius:100px;
+}
+
+#themeChangerLight {
+    color:black;
     background-color:white;
     border:1px solid lightgray;
     display:none;
-    border-radius:100px;}
+    border-radius:100px;
+}
 
 /* Sketch settings, end point. */
 
-/* Maintain the gap between the main area and the Sketch Settings*/
-
-#gapMaintainer101{width:20%}
-
 /* Main area, start point. */
 
-#container{width:45%;}
+#container {
+    width:45%;
+    border:2px solid red;
+    height:70vh;
+    padding:1em;
+}
 
 /* Main area, end point. */

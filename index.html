@@ -21,37 +21,34 @@
         <main>
 
             <!--These are the elements for the settings, shown on the right of the screen.-->
-            
-            <table>
-                <tr>
-                    <td id="sketchSettings"> 
-                        <p id="titleSketchSettings">Settings</p>
-                        <p>Select the amount of pixels that you want to have.</p>
-                        <select name="pxAmount" id="pxAmount">
-                            <option value="16px">16px</option>
-                            <option value="50px">50px</option>
-                            <option value="100px">100px</option>
-                            <option value="custom">Custom</option>
-                        </select>
-                        <input id="inputCustomValue" type="text" placeholder="Enter a custom value...">
-                        <p id="colorChooserLabel">Choose the color to draw with.</p>  
-                        <input type="color" id="colorChooser">
-                        <p id="themeChangerLabel">Change the theme, dark or light.</p>
-                        <button id="themeChangerDark" type="button" onclick="themeChangerDark()">Dark Theme</button>
-                        <button id="themeChangerLight" type="button" onclick="themeChangerLight()">Light Theme</button>
-                    </td>
-                    
-                    <!--A cell to act like a margin between the settings and the main area, becuz margin wasn't working fsr.-->
-                    
-                    <td id="gapMaintainer101"></td>
-                    
-                    <!--The main area.-->
-                    
-                    <td id="container">
-                        insert B O X
-                    </td>
-                </tr>
-            </table>
+
+            <div class="flex-container">
+                <div id="sketchSettings"> 
+                    <p id="titleSketchSettings">Settings</p>
+                    <p>Select the amount of pixels that you want to have.</p>
+                    <select name="pxAmount" id="pxAmount">
+                        <option value="16">16px</option>
+                        <option value="50">50px</option>
+                        <option value="100">100px</option>
+                        <option value="custom">Custom</option>
+                    </select>
+                    <input id="inputCustomValue" type="number" placeholder="Enter a custom value...">
+                    <button id="submitCustomValue" type="button">Submit</button>
+                    <button id="clearPxAmount" type="button">Clear Canvas</button>
+                    <p id="colorChooserLabel">Choose the color to draw with.</p>  
+                    <input type="color" id="colorChooser">
+                    <p id="themeChangerLabel">Change the theme, dark or light.</p>
+                    <button id="themeChangerDark" type="button">Dark Theme</button>
+                    <button id="themeChangerLight" type="button">Light Theme</button>
+                </div>
+                
+                <div id="gapMaintainer101"></div>
+                
+                <!--The main area.-->
+                
+                <div id="container">
+                </div> 
+            </div>
         </main>
         
         <!--Linking the JavaScript-->
