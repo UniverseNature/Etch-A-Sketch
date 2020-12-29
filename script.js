@@ -1,7 +1,7 @@
 let message = "If it is possible, keep your browser's zoom level at 100%. It will help the website look better.";
 //alert(message);
 
-// Declare all the variables we need
+// Declare all the variables we need.
 
 let darkBtn = document.querySelector("#themeChangerDark");
 let lightBtn = document.querySelector("#themeChangerLight");
@@ -34,12 +34,16 @@ function themeChangerLight() {
 // A function, called when the user submits the amount of pixels.
 
 function divMaker() {
-    for (var i = 0; i < output; i++) {
+    for (let i = 0; i < output; i++) {
         let container = document.querySelector("#container");
         let div = document.createElement("div");
+    
         div.classList = "containerChildren";
-        div.backgroundColor = "blue";
-        div.textContent = "Hello World!";
+        div.style.display = "inline";
+        div.style.border = "2px solid skyblue";
+        div.style.margin = "1rem";
+        div.style.width = "1rem";
+
         container.appendChild(div);
     }
 }
@@ -48,29 +52,27 @@ function divMaker() {
 
 function clearPxAmount(){
     let container = document.querySelector("#container");
-    for (var i = 0; i < output; i++) {
-        container.removeChild("containerChildren"); 
-    }
+    container.innerHTML = "";
 }
 
 // Event listeners for changing the theme.
 
-darkBtn.addEventListener('click', () => {
+darkBtn.addEventListener("click", () => {
     themeChangerDark()
 });
 
-lightBtn.addEventListener('click', () => {
+lightBtn.addEventListener("click", () => {
     themeChangerLight()
 });
 
-clear.addEventListener('click', () => {
+clear.addEventListener("click", () => {
     clearPxAmount();
 });
 
 /* If the pixel-amount submit button is clicked, asign the value to a variable and if the value is "custom",
    change the buttons position and make the custom value bar appear. */
 
-pxBtn.addEventListener('click', () => {
+pxBtn.addEventListener("click", () => {
     output  = selectElement.value;
     divMaker()
 
